@@ -32,7 +32,6 @@
                         :allow-symlinks? false}))
 
 (defn download-crate [package version]
-  
   (let [package-url (format "%s/%s/%s/download" crates-io-url package version)
         _ (log/infof "Downloading package using URL '%s'" package-url)
         resp (hsync/get package-url)]
@@ -82,8 +81,8 @@
                                (log/errorf "Error occured while downloading version '%s' of '%s'. Status was '%s' with response '%s"
                                            version package-name status response-body)
                                {:status status
-                                :body (format (str "Downloading remote packaged failed."
-                                                   "Error from remote host was '%s%")
+                                :body (format (str "Downloading remote packaged failed. "
+                                                   "Error from remote host was '%s'")
                                               response-body)})
                              (catch Exception e
                                (log/errorf e "Error occured while downloading version '%s' of '%s'"
