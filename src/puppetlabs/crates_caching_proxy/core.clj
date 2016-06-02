@@ -13,7 +13,7 @@
 
 (def cache-root (delay (get environ/env :cache-root "proxy-cache")))
 
-(def port (delay (Long/parseLong (get environ/env :crate-proxy-port "8080"))))
+(def port (delay (Long/parseLong (get environ/env :crate-proxy-port "8888"))))
 
 (def crates-io-api-root "/api/v1/crates")
 

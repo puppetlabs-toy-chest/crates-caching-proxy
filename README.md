@@ -11,7 +11,7 @@ with storing the crates themselves, not the index.
 ## Usage
 
 The entire application is a single clojure file, launched via `lein
-crate-proxy`. By default the proxy will launch on port 8080 and cache
+crate-proxy`. By default the proxy will launch on port 8888 and cache
 the crates in the `proxy-cache` directory, wherever it was
 launched. To override the port and the cache directory, use a command
 like: `CACHE_ROOT="/full/path/to/dir" CRATE_PROXY_PORT=9090 lein crate-proxy`.

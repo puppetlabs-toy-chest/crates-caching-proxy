@@ -1,4 +1,4 @@
-(ns crates-caching-proxy.core-test
+(ns puppetlabs.crates-caching-proxy.core-test
   (:import [java.nio.file Files Paths Path]
            [java.nio.file.attribute FileAttribute]
            [java.io ByteArrayInputStream])

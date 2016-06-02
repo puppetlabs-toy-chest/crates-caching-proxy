@@ -11,4 +11,4 @@
                  [ch.qos.logback/logback-classic "1.1.7"]
                  [environ "1.0.3"]]
   :profiles {:dev {:dependencies [[ring/ring-mock "0.3.0"]]}}
-  :aliases {"crate-proxy" ["trampoline" "run" "-m" "crates-caching-proxy.core"]})
+  :aliases {"crate-proxy" ["trampoline" "run" "-m" "puppetlabs.crates-caching-proxy.core"]})
