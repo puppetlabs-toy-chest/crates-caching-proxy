@@ -8,7 +8,6 @@
                  [puppetlabs/kitchensink "1.3.1"]
                  [org.clojure/tools.logging "0.3.1"]
                  [slingshot "0.12.2"]
-                 [ch.qos.logback/logback-classic "1.1.7"]
-                 [environ "1.0.3"]]
+                 [ch.qos.logback/logback-classic "1.1.7"]]
   :profiles {:dev {:dependencies [[ring/ring-mock "0.3.0"]]}}
   :aliases {"crate-proxy" ["trampoline" "run" "-m" "puppetlabs.crates-caching-proxy.core"]})
